@@ -6,7 +6,7 @@
     --color-text-primary: #2d3748;
     --color-text-secondary: #4a5568;
     --color-text-accent: #2b6cb0;
-    --color-text-submit: #fafafa;
+    --color-text-submit: #ffffff;
 }
 
 .dark {
@@ -15,14 +15,14 @@
     --color-text-primary: #f7fafc;
     --color-text-secondary: #e2e8f0;
     --color-text-accent: #81e6d9;
-    --color-text-submit: #212121;
+    --color-text-submit: #1a1a1a;
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 html {
@@ -40,13 +40,15 @@ body {
     flex-direction: column;
     justify-content: space-between;
     background-color: var(--color-bg-secondary);
+    padding-bottom: 10px;
 }
 
 .logo {
     font-size: 32px;
-    font-weight: 500;
+    font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 3px;
+    margin-top: 5px;
     margin-left: 20px;
 }
 
@@ -108,7 +110,6 @@ nav a {
 
 .marvel-h2,
 .dc-h2 {
-    font-weight: 300;
     font-size: 24px;
     text-align: center;
     letter-spacing: 2px;
@@ -141,6 +142,7 @@ nav a {
     text-align: center;
     letter-spacing: 1px;
     font-weight: 300;
+    font-size: 18px;
     color: var(--color-text-accent);
 }
 
@@ -287,7 +289,7 @@ input[type="submit"] {
     letter-spacing: 2px;
     margin-top: 10px;
     margin-bottom: 10px;
-    color: var(--color-text-secondary);
+    color: var(--color-text-primary);
 }
 
 .social-icons li {
@@ -367,11 +369,16 @@ input[type="submit"] {
         display: none;
     }
 
+    .marvel-h2, .dc-h2 {
+        padding-top: 60px;
+        font-size: 28px;
+    }
+
     .marvel-article, .dc-article {
         gap: 20px;
     }
 
-    /* Optional hover effect */
+    /* hover effect */
     .movie-card img {
         position: relative;
         box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
