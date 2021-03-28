@@ -1,0 +1,32 @@
+[
+  {
+    "title": "Avengers Endgame",
+    "imgSrc": "images/avengersendgame.jpg",
+    "link": "#"
+  },
+  {
+    "title": "Captain Marvel",
+    "imgSrc": "images/captainmarvel.jpg",
+    "link": "#"
+  },
+  {
+    "title": "The Avengers",
+    "imgSrc": "images/theavengers.jpg",
+    "link": "#"
+  },
+  {
+    "title": "Avengers Infinity War",
+    "imgSrc": "images/avengersinfinitywar.jpg",
+    "link": "#"
+  },
+  {
+    "title": "Black Panther",
+    "imgSrc": "images/blackpanther.jpg",
+    "link": "blackpanther.html"
+  },
+  {
+    "title": "Thor Ragnarok",
+    "imgSrc": "images/thorragnarok.jpg",
+    "link": "#"
+  }
+]

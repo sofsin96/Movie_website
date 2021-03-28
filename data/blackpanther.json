@@ -1,0 +1,23 @@
+{
+  "movieData": [
+  {
+    "title": "Black Panther",
+    "duration": "2h 14min",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Sci-Fi"
+    ],
+    "year": 2018,
+    "description": "T'Challa, heir to the hidden but advanced kingdom of Wakanda, must step forward to lead his people into a new future and must confront a challenger from his country's past.",
+    "director": "Ryan Coogler",
+    "stars": [
+      "Chadwick Boseman",
+      "Michael B. Jordan",
+      "Lupita Nyong'o"
+    ],
+    "language": "English"
+  }
+  ]
+}
+

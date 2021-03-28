@@ -1,0 +1,123 @@
+.movie-article {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: var(--color-bg-primary);
+}
+
+.blackpanther-card {
+    padding-top: 40px;
+    flex: 0 1 300px;
+}
+
+#movieData {
+    flex: 0 1 400px;
+}
+
+.blackpanther-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+li {
+    list-style-type: none;
+}
+
+li h2 {
+    color: var(--color-text-primary);
+    font-size: 24px;
+    font-weight: 300;
+    margin-bottom: 5px;
+}
+
+li span:first-of-type {
+    color: var(--color-text-accent);
+    font-size: 18px;
+    font-weight: 300;
+    word-spacing: 5px;
+    letter-spacing: 1px;
+}
+
+li p {
+    font-size: 16px;
+    font-weight: 200;
+    letter-spacing: 1px;
+}
+
+li p:first-of-type {
+    color: var(--color-text-secondary);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    line-height: 160%;
+}
+
+li p:nth-of-type(2), li p:nth-of-type(3) {
+    color: var(--color-text-accent);
+    margin-bottom: 5px;
+}
+
+li p:last-of-type {
+    color: var(--color-text-accent);
+    margin-bottom: 40px;
+}
+
+li p span:last-of-type {
+    color: var(--color-text-secondary);
+    font-size: 16px;
+    font-weight: 200;
+    letter-spacing: 1px;
+}
+
+
+/* Black Panther */
+/*
+!* filter: grayscale(100%);
+transition: filter 0.5s; *!
+
+button {
+  margin-left: 20px;
+  margin-bottom: 40px;
+  border-radius: 5px;
+  padding: 7px;
+  border: 2px solid #222;
+  font-size: 16px;
+  letter-spacing: 1px;
+  text-align: center;
+  background-color: cadetblue;
+  width: 130px;
+  cursor: pointer;
+}
+
+.fa-play {
+  margin-right: 5px;
+}
+
+button:focus {
+  outline: none;
+}*/
+
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .movie-article {
+        gap: 20px;
+    }
+
+    .blackpanther-card {
+        padding-top: 40px;
+    }
+}
+
+/* Desktop */
+@media screen and (min-width: 1025px) {
+    .movie-article {
+        gap: 40px;
+    }
+
+    .blackpanther-card {
+        padding-top: 60px;
+    }
+}
+
+

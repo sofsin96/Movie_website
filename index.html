@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png">
+    <script src="https://kit.fontawesome.com/b7dcf1c2f6.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<header class="header-container">
+    <div class="logo">
+        <a href="#">Movies</a>
+    </div>
+    <nav>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Movies</a></li>
+            <li><a href="#" class="modal-btn">Sign Up</a></li>
+            <li><a href="#">Log In</a></li>
+            <li><button class="theme-toggle" id="theme-toggle"><i class="fas fa-adjust"></i></button></li>
+        </ul>
+        <div class="burger">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+</header>
+
+<main>
+    <div>
+        <h2 class="marvel-h2">Marvel Movies</h2>
+    </div>
+
+    <article class="marvel-article">
+        <!--<figure class="movie-card">
+            <a href="#"><img src="images/avengersendgame.jpg" alt="Avengers Endgame"></a>
+            <figcaption>
+                <h3>Avengers Endgame</h3>
+            </figcaption>
+        </figure>
+        <figure class="movie-card">
+            <a href="#"><img src="images/captainmarvel.jpg" alt="Captain Marvel"></a>
+            <figcaption>
+                <h3>Captain Marvel</h3>
+            </figcaption>
+        </figure>
+        <figure class="movie-card">
+            <a href="#"><img src="images/theavengers.jpg" alt="The Avengers"></a>
+            <figcaption>
+                <h3>The Avengers</h3>
+            </figcaption>
+        </figure>
+        <figure class="movie-card">
+            <a href="#"><img src="images/avengersinfinitywar.jpg" alt="Avengers Infity War"></a>
+            <figcaption>
+                <h3>Avengers Infinity War</h3>
+            </figcaption>
+        </figure>
+        <figure class="movie-card">
+            <a href="blackpanther.html"><img src="images/blackpanther.jpg" alt="Black Panther"></a>
+            <figcaption>
+                <h3>Black Panther</h3>
+            </figcaption>
+        </figure>
+        <figure class="movie-card">
+            <a href="#"><img src="images/thorragnarok.jpg" alt="Thor Ragnarok"></a>
+            <figcaption>
+                <h3>Thor Ragnarok</h3>
+            </figcaption>
+        </figure>-->
+    </article>
+
+    <div>
+        <h2 class="dc-h2">DC movies</h2>
+    </div>
+
+    <article class="dc-article">
+        <!--<figure class="movie-card">
+            <a href="#"><img src="images/justiceleague382x566.jpg" alt="Justice League"></a>
+            <figcaption>
+                <h3>Justice League</h3>
+            </figcaption>
+        </figure>
+        <figure class="movie-card">
+            <a href="#"><img src="images/aquaman382x566.jpg" alt="Aquaman"></a>
+            <figcaption>
+                <h3>Aquaman</h3>
+            </figcaption>
+        </figure>
+        <figure class="movie-card">
+            <a href="#"><img src="images/wonderwoman382x566.jpg" alt="Wonder Woman"></a>
+            <figcaption>
+                <h3>Wonder Woman</h3>
+            </figcaption>
+        </figure>
+        <figure class="movie-card">
+            <a href="#"><img src="images/joker382x566.jpg" alt="Joker"></a>
+            <figcaption>
+                <h3>Joker</h3>
+            </figcaption>
+        </figure>
+        <figure class="movie-card">
+            <a href="#"><img src="images/thedarkknight382x566.jpg" alt="The Dark Knight"></a>
+            <figcaption>
+                <h3>The Dark Knight</h3>
+            </figcaption>
+        </figure>
+        <figure class="movie-card">
+            <a href="#"><img src="images/suicidesquad382x566.jpg" alt="Suicide Squad"></a>
+            <figcaption>
+                <h3>Suicide Squad</h3>
+            </figcaption>
+        </figure>-->
+    </article>
+</main>
+
+<div class="modal">
+    <form class="form" id="signup" method="post" action="">
+
+        <div>
+            <h2>Create Account</h2>
+        </div>
+
+        <div class="form-control">
+            <label for="username">Username</label>
+            <input type="text" id="username" autocomplete="off"/>
+            <small>Error message</small>
+        </div>
+
+        <div class="form-control">
+            <label for="email">Email</label>
+            <input type="text" id="email" autocomplete="off"/>
+            <small>Error message</small>
+        </div>
+
+        <div class="form-control">
+            <label for="password">Password</label>
+            <input type="password" id="password"/>
+            <small>Error message</small>
+        </div>
+
+        <p class="p1">By creating an account, you agree to our Terms of Use and Privacy Policy.</p>
+
+        <input type="submit" value="Sign Up"/>
+
+        <p class="p2">Already have an account? <a href="#">Sign In</a></p>
+
+        <span class="close-btn">&times;</span>
+    </form>
+</div>
+
+<footer class="footer-container">
+    <div><h2 class="footer-h2">Movies</h2></div>
+    <ul class="social-icons">
+        <li><i class="fab fa-facebook"></i></li>
+        <li><i class="fab fa-twitter"></i></li>
+        <li><i class="fab fa-youtube"></i></li>
+        <li><i class="fab fa-instagram"></i></li>
+    </ul>
+    <div><p>Copyright &copy;2021 Movies. All Rights Reserved.</p></div>
+</footer>
+
+<script src="js/script.js"></script>
+<script src="js/fetch.js"></script>
+<script src="js/form.js"></script>
+
+</body>
+</html>

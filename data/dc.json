@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Justice League",
+    "imgSrc": "images/justiceleague382x566.jpg"
+  },
+  {
+    "title": "Aquaman",
+    "imgSrc": "images/aquaman382x566.jpg"
+  },
+  {
+    "title": "Wonder Woman",
+    "imgSrc": "images/wonderwoman382x566.jpg"
+  },
+  {
+    "title": "Joker",
+    "imgSrc": "images/joker382x566.jpg"
+  },
+  {
+    "title": "The Dark Knight",
+    "imgSrc": "images/thedarkknight382x566.jpg"
+  },
+  {
+    "title": "Suicide Squad",
+    "imgSrc": "images/suicidesquad382x566.jpg"
+  }
+]
