@@ -1,5 +1,4 @@
 /* Mobile first */
-
 :root {
     --color-bg-primary: #ffffff;
     --color-bg-secondary: #edf2f7;
@@ -83,7 +82,7 @@ nav a {
 .theme-toggle {
     width: 27px;
     height: 27px ;
-    border: 1px solid var(--color-text-primary);
+    border: 2px solid var(--color-text-primary);
     background: transparent;
     border-radius: 5px;
     cursor: pointer;
@@ -141,7 +140,7 @@ nav a {
 .movie-title h3 {
     text-align: center;
     letter-spacing: 1px;
-    font-weight: 300;
+    font-weight: 500;
     font-size: 18px;
     color: var(--color-text-accent);
 }
@@ -208,7 +207,7 @@ nav a {
     width: 100%;
     height: 40px;
     border-radius: 5px;
-    border: 1px solid var(--color-text-secondary);
+    border: 2px solid var(--color-text-secondary);
     padding-left: 10px;
     margin-bottom: 5px;
     font-size: 16px;

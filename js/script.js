@@ -19,7 +19,6 @@ closeBtn.addEventListener('click',() => {
     modal.classList.remove('active');
 });
 
-
 // dark/light mode
 const themeBtn = document.querySelector('#theme-toggle');
 const bodyEl = document.querySelector('body');
@@ -45,5 +44,18 @@ let setDarkMode = localStorage.getItem('dark');
 if(setDarkMode === 'on') {
     darkMode();
 }
+
+// movie trailer
+const playBtn = document.querySelector('#play-btn');
+const trailer = document.querySelector('.movie-trailer');
+const closeTrailer = document.querySelector('.close-trailer');
+
+playBtn.addEventListener('click',() => {
+    trailer.classList.add('active');
+});
+
+closeTrailer.addEventListener('click',() => {
+    trailer.classList.remove('active');
+});
 
 

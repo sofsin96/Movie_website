@@ -3,12 +3,13 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 15px;
     background-color: var(--color-bg-primary);
-    padding-bottom: 100px;
+    padding-bottom: 104px;
 }
 
 .blackpanther-card {
+    position: relative;
     padding-top: 40px;
     flex: 0 1 300px;
 }
@@ -19,7 +20,19 @@
 
 .blackpanther-card img {
     width: 100%;
+    height: auto;
     border-radius: 10px;
+    filter: brightness(0.6);
+}
+
+.blackpanther-card i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 48px;
+    color: #ffffff;
+    cursor: pointer;
 }
 
 li {
@@ -29,7 +42,8 @@ li {
 li h2 {
     color: var(--color-text-primary);
     font-size: 24px;
-    font-weight: 300;
+    font-weight: 700;
+    letter-spacing: 1px;
     margin-bottom: 5px;
 }
 
@@ -37,7 +51,7 @@ li span:first-of-type {
     color: var(--color-text-accent);
     font-size: 18px;
     font-weight: 300;
-    word-spacing: 5px;
+    word-spacing: 3px;
     letter-spacing: 1px;
 }
 
@@ -56,12 +70,11 @@ li p:first-of-type {
 
 li p:nth-of-type(2), li p:nth-of-type(3) {
     color: var(--color-text-accent);
-    margin-bottom: 5px;
+    margin-bottom: 7px;
 }
 
 li p:last-of-type {
     color: var(--color-text-accent);
-    margin-bottom: 40px;
 }
 
 li p span:last-of-type {
@@ -71,38 +84,43 @@ li p span:last-of-type {
     letter-spacing: 1px;
 }
 
-
-/* Black Panther */
-/*
-!* filter: grayscale(100%);
-transition: filter 0.5s; *!
-
-button {
-  margin-left: 20px;
-  margin-bottom: 40px;
-  border-radius: 5px;
-  padding: 7px;
-  border: 2px solid #222;
-  font-size: 16px;
-  letter-spacing: 1px;
-  text-align: center;
-  background-color: cadetblue;
-  width: 130px;
-  cursor: pointer;
+.movie-trailer {
+    background-color: rgba(0,0,0,0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    opacity: 0;
 }
 
-.fa-play {
-  margin-right: 5px;
+.movie-trailer.active {
+    visibility: visible;
+    opacity: 1;
 }
 
-button:focus {
-  outline: none;
-}*/
+.movie-trailer iframe {
+    position: relative;
+}
+
+.close-trailer {
+    position: absolute;
+    top: 15%;
+    right: 50%;
+    font-size: 42px;
+    color: #fff;
+    cursor: pointer;
+}
 
 /* Tablet */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
     .movie-article {
-        gap: 20px;
+        gap: 30px;
+        padding-bottom: 37px;
     }
 
     .blackpanther-card {
@@ -113,7 +131,8 @@ button:focus {
 /* Desktop */
 @media screen and (min-width: 1025px) {
     .movie-article {
-        gap: 40px;
+        gap: 45px;
+        padding-bottom: 107px;
     }
 
     .blackpanther-card {
