@@ -16,7 +16,10 @@ modalBtn.addEventListener('click',() => {
 });
 
 closeBtn.addEventListener('click',() => {
+    const form = document.querySelector('.form');
+
     modal.classList.remove('active');
+    form.reset();
 });
 
 // dark/light mode
@@ -47,15 +50,19 @@ if(setDarkMode === 'on') {
 
 // movie trailer
 const playBtn = document.querySelector('#play-btn');
-const trailer = document.querySelector('.movie-trailer');
+const movieTrailer = document.querySelector('.movie-trailer');
+const iframe = document.querySelector('iframe');
 const closeTrailer = document.querySelector('.close-trailer');
 
+const player = new Vimeo.Player(iframe);
+
 playBtn.addEventListener('click',() => {
-    trailer.classList.add('active');
+    movieTrailer.classList.add('active');
+    player.play();
 });
 
 closeTrailer.addEventListener('click',() => {
-    trailer.classList.remove('active');
+    movieTrailer.classList.remove('active');
+    player.pause();
 });
-
 

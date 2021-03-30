@@ -31,7 +31,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 48px;
-    color: #ffffff;
+    color: #fff;
     cursor: pointer;
 }
 
@@ -105,15 +105,17 @@ li p span:last-of-type {
 
 .movie-trailer iframe {
     position: relative;
+    flex-basis: 90%;
 }
 
 .close-trailer {
     position: absolute;
-    top: 15%;
-    right: 50%;
+    top: 25%;
+    left: 50%;
     font-size: 42px;
     color: #fff;
     cursor: pointer;
+
 }
 
 /* Tablet */
@@ -126,6 +128,10 @@ li p span:last-of-type {
     .blackpanther-card {
         padding-top: 40px;
     }
+
+    .close-trailer {
+        top: 20%;
+    }
 }
 
 /* Desktop */
@@ -137,6 +143,10 @@ li p span:last-of-type {
 
     .blackpanther-card {
         padding-top: 60px;
+    }
+
+    .close-trailer {
+        top: 15%;
     }
 }
 
